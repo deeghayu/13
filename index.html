@@ -170,8 +170,8 @@
         /* BUDDHA IMAGE CONTAINER WITH ANIMATED BUDU RES */
         .buddha-container {
             position: relative;
-            width: 220px;
-            height: 220px;
+            width: 240px;
+            height: 240px;
             margin: 0 auto 20px auto;
             display: flex;
             align-items: center;
@@ -181,8 +181,8 @@
         /* කැරකෙන බුදු රැස් මාලාව (Res Aura) */
         .budu-res-halo {
             position: absolute;
-            width: 170px;
-            height: 170px;
+            width: 190px;
+            height: 190px;
             border-radius: 50%;
             background: conic-gradient(
                 from 0deg,
@@ -194,33 +194,34 @@
                 rgba(75,0,130,0.85) 75%,
                 rgba(255,0,0,0.85) 100%
             );
-            filter: blur(12px);
+            filter: blur(15px);
             animation: rotateRes 7s linear infinite;
             z-index: 1;
-            opacity: 0.9;
+            opacity: 0.85;
             box-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
         }
 
         /* බුදු රැස් වල තවත් ලස්සන Glow එකක් */
         .budu-res-glow {
             position: absolute;
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             background: radial-gradient(circle, rgba(255,240,150,1) 0%, transparent 70%);
             z-index: 2;
-            filter: blur(8px);
+            filter: blur(10px);
             animation: pulseGlow 2s ease-in-out infinite alternate;
         }
 
-        /* GOLDEN 3D BUDDHA IMAGE STYLE */
+        /* UPLOADED IMAGE POSITIONING */
         .uploaded-buddha-img {
             position: relative;
-            width: 160px;
+            width: 210px;
             height: auto;
             z-index: 3;
-            border-radius: 15px;
-            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6)) contrast(1.05);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
             animation: imageFloat 4s ease-in-out infinite alternate;
         }
 
@@ -236,7 +237,7 @@
 
         @keyframes imageFloat {
             0% { transform: translateY(0px) scale(0.98); }
-            100% { transform: translateY(-5px) scale(1.02); }
+            100% { transform: translateY(-6px) scale(1.02); }
         }
 
         .card-heading {
@@ -519,7 +520,7 @@
                 <div class="budu-res-halo"></div>
                 <div class="budu-res-glow"></div>
                 
-                <img class="uploaded-buddha-img" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240' width='240' height='240'><defs><linearGradient id='goldG' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23fff6a3'/><stop offset='50%' stop-color='%23ffd700'/><stop offset='100%' stop-color='%239e7800'/></linearGradient><linearGradient id='darkG' x1='0%' y1='100%' x2='0%' y2='0%'><stop offset='0%' stop-color='%235c4300'/><stop offset='100%' stop-color='%23ffd700'/></linearGradient><filter id='shd'><feDropShadow dx='0' dy='4' stdDeviation='5' flood-color='%23000' flood-opacity='0.6'/></filter></defs><g filter='url(%23shd)'><path d='M120,22 C120,15 122,12 120,8 C118,12 120,15 120,22 Z' fill='url(%23goldG)' stroke='%23fff' stroke-width='0.5'/><circle cx='120' cy='24' r='4' fill='url(%23goldG)'/><ellipse cx='120' cy='42' rx='18' ry='16' fill='url(%23goldG)'/><path d='M102,40 Q98,42 98,48 Q98,54 103,50' fill='none' stroke='url(%23goldG)' stroke-width='2.5' stroke-linecap='round'/><path d='M138,40 Q142,42 142,48 Q142,54 137,50' fill='none' stroke='url(%23goldG)' stroke-width='2.5' stroke-linecap='round'/><path d='M120,54 L120,68 L104,78 L100,105 L106,145 L134,145 L140,105 L136,78 Z' fill='url(%23goldG)'/><path d='M106,62 Q120,54 134,62 C146,75 152,95 156,115 Q164,152 152,158 C135,165 105,165 88,158 Q76,152 84,115 C88,95 94,75 106,62 Z' fill='url(%23goldG)'/><path d='M106,62 Q120,70 134,62' fill='none' stroke='%237a5800' stroke-width='1'/><path d='M108,125 Q120,134 132,125 Q120,128 108,125' fill='url(%23darkG)'/><path d='M112,125 Q120,118 128,125' fill='none' stroke='%237a5800' stroke-width='1.5'/><path d='M70,165 Q120,140 170,165 Q185,185 165,200 Q120,208 75,200 Q55,185 70,165 Z' fill='url(%23darkG)'/><path d='M60,192 C60,180 180,180 180,192 C180,205 160,212 120,212 C80,212 60,205 60,192 Z' fill='url(%23goldG)'/><path d='M65,192 Q120,198 175,192' fill='none' stroke='%237a5800' stroke-width='1.5'/></g></svg>"/>
+                <img class="uploaded-buddha-img" src="buddha.png" alt="Golden Buddha Statue">
             </div>
 
             <h2 class="card-heading">පින්බර වෙසක් මංගල්‍යයක් වේවා!</h2>
@@ -604,7 +605,7 @@
             birth: {
                 title: "උතුම් බෝසත් උත්පත්තිය",
                 gatha: "ජාතෝ සකේ සුත්තපදේ මනුස්සෝ<br>ලෝකේ අගෝ අසමෝ සදේවකේ",
-                mainText: "මහමායා දේවි මව් කුස පිළිසිඳගෙන දස මසක් ඇවෑමෙන්, වෙසක් පුර පසළොස්වක පොහෝ දිනක ලුම්බිණි සල් උයනේදී අප මහා බෝසතාණන් වහන්සේ මෙලොව උපත ලැබූ සේක. උපත ලැබූ සැනින් උතුරු දිශාවට පියවර සතක් තබා අභීතසිංහනාද පෘථිවියසිසාරා පැවැත්වූ සේක. එසේම මෙම උතුම් වෙසක් පොහෝ දිනකම සිදු වූ බෝසත් උපත මුළු මහත් ලෝකයාගේම අවිද්‍යාව දුරු කිරීමට මඟ පෑදූ ප්‍රථම ආශ්චර්යවත් සිදුවීම වේ."
+                mainText: "මහමායා දේවි මව් කුස පිළිසිඳගෙන දස මසක් ඇවෑමෙන්, වෙසක් පුර පසළොස්වක පොහෝ දිනක ලුම්බිණි සල් උයනේදී අප මහා බෝසතාණන් වහන්සේ මෙලොව උපත ලැබූ සේක. උපත ලැබූ සැනින් උතුරු දිශාවට පියවර සතක් තබා අභීතසිංහනාද පෘථිවිය සිසාරා පැවැත්වූ සේක. එසේම මෙම උතුම් වෙසක් පොහෝ දිනකම සිදු වූ බෝසත් උපත මුළු මහත් ලෝකයාගේම අවිද්‍යාව දුරු කිරීමට මඟ පෑදූ ප්‍රථම ආශ්චර්යවත් සිදුවීම වේ."
             },
             enlightenment: {
                 title: "ලොව්තුරා බුද්ධත්වයට පත්වීම",
@@ -613,7 +614,7 @@
             },
             parinirvana: {
                 title: "මහා පිරිනිවන් පෑම",
-                gatha: "අනිච්චා වත සංඛාරා - උප්පාදවයධම්මිනෝ<br>උප්පජ්ජිත්වා නිරුජ්ඣන්ති - තේසං වූපසමෝ සුඛෝ",
+                gatha: "අනිච්චා වත සංඛාරා - උප්පාදවයධම්මිනෝ<br>උප්පජ්ජිත්වා nيرujඣන්ති - තේසං වූපසමෝ සුඛෝ",
                 mainText: "පුරා වසර 45ක් මුළුල්ලේ ලෝක සත්වයා කෙරෙහි මහා කරුණාවෙන් යුතුව සදහම් දේශනා කොට, වයස අවුරුදු 80 දී කුසිනාරා නුවර මල්ල රජදරුවන්ගේ උපවත්තන සල් උද්‍යානයේදී වෙසක් පුර පසළොස්වක පොහෝ දිනක අනුපාදිශේෂ නිර්වාණ ධාතුවෙන් බුදුරජාණන් වහන්සේ පිරිනිවන් පෑ සේක. 'වයධම්මා සංඛාරා, අප්පමාදේන සම්පාදේථ' යන අවසාන බුදු වදන සිහිපත් කරමින් උන්වහන්සේ පිරිනිවී ගිය සේක."
             }
         };
